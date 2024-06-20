@@ -15,8 +15,8 @@ import image2 from '../../assets/carousel/image2.png';
 import image3 from '../../assets/carousel/image3.png';
 
 // Import preview images
-import previewImage1 from '../../assets/placeholder1.png';
-import previewImage2 from '../../assets/placeholder2.png';
+// import previewImage1 from '../../assets/placeholder1.png';
+// import previewImage2 from '../../assets/placeholder2.png';
 
 const Home = () => {
   const settings = {
@@ -149,8 +149,11 @@ const Home = () => {
               <a href="/IBP_Problemstatement.docx" download className="block text-red-500 text-xl font-bold mb-4">Download the Leaflet</a>
             </div>
             <div className="w-full md:w-1/2 mt-4 md:mt-0">
-              <img src={previewImage1} alt="Preview 1" className="w-full h-full object-cover rounded-lg shadow-lg mb-4" />
-              <img src={previewImage2} alt="Preview 2" className="w-full h-full object-cover rounded-lg shadow-lg" />
+              {/* <img src={previewImage1} alt="Preview 1" className="w-full h-full object-cover rounded-lg shadow-lg mb-4" /> */}
+              <div className="w-full h-64 object-cover rounded-lg shadow-lg bg-white flex items-center justify-center">
+                <p>Placeholder</p>
+              </div>
+           
             </div>
           </div>
         </div>
