@@ -3,8 +3,8 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(to right, #3ABEFF, #E2E8F0, #D3EAF7);
-  background-image: url('../../assets/new-banner.png');
+  /* background: linear-gradient(to right, #3ABEFF, #E2E8F0, #D3EAF7); */
+  /* background-image: url('../../assets/new-banner.png'); */
   background-size: cover;
   background-position: center;
   display: flex;

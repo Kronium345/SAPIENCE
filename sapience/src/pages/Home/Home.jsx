@@ -58,7 +58,7 @@ const Home = () => {
       <section className="hero h-screen flex flex-col items-center justify-center text-center">
         <div className="hero-content">
           <h2 className="intro-title">SAPIENCE</h2>
-          <p className="intro-subtitle">Sense & Avoid - a cooPeratIvE droNe COMPetition</p>
+          <p className="intro-subtitle">Sense & Avoid - a cooPeratIvE droNe CompEtition</p>
         </div>
       </section>
 
