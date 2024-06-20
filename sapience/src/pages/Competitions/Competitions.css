@@ -1,0 +1,68 @@
+.competitions-page {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .competitions-header {
+    background-color: #f4f4f4;
+    padding: 2rem 0;
+  }
+  
+  .competition-section {
+    margin-bottom: 2rem;
+  }
+  
+  .competition-section h2 {
+    color: #333;
+  }
+  
+  .competition-section p {
+    color: #555;
+  }
+  
+  .competition-details {
+    margin-top: 1rem;
+    text-align: left;
+  }
+  
+  .competition-details h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .competition-details p,
+  .competition-details ul {
+    margin-bottom: 0.5rem;
+  }
+  
+  .competition-details ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+  }
+  
+  .success-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  .success-table th,
+  .success-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .success-table th {
+    background-color: #f4f4f4;
+    text-align: left;
+  }
+  
+  .success-table td {
+    background-color: #fff;
+  }
+  
+  .success-table th,
+  .success-table td {
+    color: #333;
+  }
+  

@@ -1,0 +1,96 @@
+/* Navbar */
+.navbar {
+  position: relative;
+  z-index: 10;
+  transition: all 0.5s ease; /* Increase the transition duration for smoother effect */
+  background: rgba(255, 255, 255, 0.8); /* Initial background with 80% opacity */
+  width: 100%;
+  top: 0;
+}
+
+.navbar.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95); /* Background with 95% opacity when sticky */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: 60px; /* Ensure consistent height */
+}
+
+.navbar .logo {
+  height: 40px;
+}
+
+.navbar .logo a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar .logo img {
+  height: 40px; /* Adjust the height to make the logo smaller */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 0 15px; /* Margin for consistent spacing */
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #e53e3e; /* Change to your desired hover color */
+}
+
+.navbar ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.navbar ul li:hover ul {
+  display: block;
+}
+
+.navbar ul li ul li {
+  width: 160px;
+}
+
+.navbar ul li ul li a {
+  padding: 10px 20px;
+}
+
+.navbar ul li ul li a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar .container {
+    flex-direction: column;
+  }
+}

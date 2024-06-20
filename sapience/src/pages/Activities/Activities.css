@@ -1,0 +1,67 @@
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Adjust the height of the hero section */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-title {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Activity Gallery */
+.activity-gallery {
+  padding: 6rem 0;
+  background: linear-gradient(to right, #D3EAF7, #E2E8F0, #F71735);
+  text-align: center;
+  width: 100%;
+}
+
+.activity-gallery .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.activity-gallery h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+/* Activity Items */
+.activity-item {
+  margin-bottom: 4rem;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+}
+
+.activity-item h3 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.activity-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+.activity-item p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
