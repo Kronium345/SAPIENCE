@@ -101,7 +101,7 @@ const Home = () => {
             <div className="team-member">
               <img src={nabilImage} alt="Prof. Nabil Aouf" className="team-img" />
               <p className="team-name">Prof. Nabil Aouf</p>
-              <p className="team-role">City University of London</p>
+              <p className="team-role">City, University of London</p>
               <p className="team-country">United Kingdom</p>
               {/* <p className="team-email">nabil.aouf@city.ac.uk</p> */}
             </div>
