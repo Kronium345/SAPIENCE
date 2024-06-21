@@ -33,6 +33,10 @@ h3{
   color: black;
 }
 
+li{
+  color: black;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
