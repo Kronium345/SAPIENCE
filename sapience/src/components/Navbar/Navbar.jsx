@@ -1,31 +1,15 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import natoLogo from '../../assets/nato-line.png';
+// import natoLogo from '../../assets/nato-line.png';
 
 const Navbar = () => {
-  useEffect(() => {
-    const handleScroll = () => {
-      const navbar = document.querySelector('.navbar');
-      if (window.scrollY > 20) {
-        navbar.classList.add('sticky');
-      } else {
-        navbar.classList.remove('sticky');
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   return (
     <nav className="navbar">
       <div className="container mx-auto flex justify-between items-center">
         <div className="logo">
           <Link to="/" className="text-xl font-bold">
-            <img src={natoLogo} alt="NATO Logo" />
+            SAPIENCE
           </Link>
         </div>
         <ul className="flex space-x-6">

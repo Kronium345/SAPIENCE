@@ -2,9 +2,7 @@
 .home .hero {
   position: relative;
   width: 100%;
-  height: 100vh;
-  /* background: linear-gradient(to right, #3ABEFF, #E2E8F0, #D3EAF7); */
-  /* background-image: url('../../assets/new-banner.png'); */
+  height: 70vh;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -20,48 +18,33 @@
 }
 
 .home .intro-title {
-  font-size: 4rem;
+  font-size: 3rem;
   font-style: oblique;
   font-weight: bold;
   color: #333;
 }
 
 .home .intro-subtitle {
-  font-size: 3rem;
+  font-size: 2rem;
   color: #000;
   margin-top: 1rem;
   font-style: oblique;
 }
 
-.logo-container {
-  position: absolute;
-  top: 80px;
-  left: 20px;
-}
-
-.rami-logo {
-  height: 100px;
-  width: 100px;
-  margin-top: 60px;
-}
-
 .intro,
-.quote-section,
-.research-profile,
+.intro,
 .facilities,
-.tour,
-.contact {
+.team-section,
+.document-section {
   width: 100%;
   padding: 60px 0;
 }
 
-.intro .container,
-.quote-section .container,
-.research-profile .container,
-.facilities .container,
-.tour .container,
-.contact .container {
-  max-width: 1300px;
+.intro .intro-container,
+.facilities .facilities-container,
+.team-section .container,
+.document-section .container {
+  max-width: 1200px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -88,8 +71,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 300px; /* Fixed width */
-  height: 300px; /* Fixed height */
+  width: 300px;
+  height: 300px;
 }
 
 .research-area-tile:hover {
@@ -107,184 +90,6 @@
   color: #555;
 }
 
-.facilities-container {
-  align-items: center;
-}
-
-.quote-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.quote-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 800px;
-  padding: 40px;
-  background-color: #96C9DC;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.profile-img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
-
-.quote-details {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.quote-text {
-  font-size: 1.25rem;
-}
-
-.quote-author {
-  font-size: 1rem;
-  color: #e53e3e;
-}
-
-.slider {
-  max-width: 85%;
-  margin: 0 auto;
-}
-
-.carousel-item {
-  display: flex;
-  justify-content: center;
-}
-
-.carousel-image {
-  max-width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: 2px solid #333;
-}
-
-.tour video,
-.tour img {
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 100%;
-}
-
-/* Team Section */
-.team-section {
-  text-align: center;
-  background-color: #f9f9f9;
-  padding: 40px 0;
-}
-
-.team-section h2 {
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.team-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.team-member {
-  margin: 10px;
-  text-align: center;
-  width: 200px; /* Adjusted width for equal sizing */
-}
-
-.team-img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  margin: 0 auto;
-}
-
-.team-img:hover {
-  transform: scale(1.05);
-}
-
-.team-name {
-  margin-top: 10px;
-  color: #E53E3E;
-  font-weight: bold;
-}
-
-.team-role,
-.team-country,
-.team-email {
-  margin-top: 5px;
-  color: #555;
-  font-size: 0.875rem;
-}
-
-.contact {
-  background: #f9f9f9;
-}
-
-.contact form {
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  padding: 2vw 4vw;
-  width: 90%;
-  max-width: 600px;
-  border-radius: 10px;
-  margin: 0 auto;
-}
-
-.contact form h3 {
-  color: #4A5899;
-  text-align: center;
-  font-weight: 800;
-  margin-bottom: 20px;
-}
-
-.contact form input,
-.contact form textarea {
-  border: 0;
-  margin: 10px 0;
-  padding: 20px;
-  outline: none;
-  background: #F5F5F5;
-  font-size: 16px;
-  border-radius: 20px;
-}
-
-.contact form button {
-  padding: 15px;
-  background: #FF5361;
-  color: #fff;
-  font-size: 18px;
-  border: 0;
-  outline: none;
-  cursor: pointer;
-  width: 150px;
-  margin: 20px auto 0;
-  border-radius: 30px;
-}
-
-.contact form button img {
-  height: 15px;
-  align-items: center;
-  padding-left: 15px;
-}
-
-.contact .contact-inputs:focus {
-  border: 2px solid #ff994f;
-}
-
-.contact .contact-inputs::placeholder {
-  color: #a9a9a9;
-}
-
-/* Custom Arrow Styling */
 .custom-arrow {
   width: 50px;
   height: 50px;
@@ -321,8 +126,59 @@
   border: 2px solid #333;
 }
 
+.team-section {
+  text-align: center;
+  background: linear-gradient(to right, #ebf8ff, #d0ebff);
+  padding: 40px 0;
+}
+
+.team-section h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-member {
+  margin: 10px;
+  text-align: center;
+  width: 200px;
+}
+
+.team-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin: 0 auto;
+}
+
+.team-img:hover {
+  transform: scale(1.05);
+}
+
+.team-name {
+  margin-top: 10px;
+  color: #007acc;
+  font-weight: bold;
+}
+
+.team-role,
+.team-country,
+.team-email {
+  margin-top: 5px;
+  color: #555;
+  font-size: 0.875rem;
+}
+
 .facilities h2 {
-  color: #e53e3e;
+  color: #333;
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
@@ -340,7 +196,7 @@
 
 @media (max-width: 768px) {
   .hero-content h2 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .hero-content p {
