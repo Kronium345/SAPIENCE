@@ -6,6 +6,8 @@
   background: white; /* Initial background */
   width: 100%;
   top: 0;
+  left: 0;
+  right: 0;
 }
 
 .navbar.scrolled {
@@ -82,11 +84,6 @@
 
 .navbar ul li ul li a:hover {
   background-color: #f1f1f1;
-}
-
-/* Add padding to the top of the page content to avoid overlap with the fixed navbar */
-body {
-  padding-top: 60px; /* Adjust this value to match the height of your navbar */
 }
 
 /* Responsive Design */

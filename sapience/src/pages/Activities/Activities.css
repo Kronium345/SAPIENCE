@@ -92,7 +92,7 @@ header h2 {
 .activity-item {
   margin-bottom: 4rem;
   background-color: white;
-  padding: 2rem;
+  padding: 0.7rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border: 1px solid #ccc;
