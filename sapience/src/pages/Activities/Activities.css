@@ -88,6 +88,14 @@ header h2 {
   margin-bottom: 2rem;
 }
 
+.activity-item p{
+  padding-right: 100px;
+}
+
+.activity-item h3{
+  padding-right: 100px;
+}
+
 /* Activity Items */
 .activity-item {
   margin-bottom: 4rem;
@@ -121,6 +129,11 @@ header h2 {
 /* Even items: image on the right, text on the left */
 .activity-item:nth-child(even) {
   flex-direction: row-reverse;
+}
+
+.activity-item:nth-child(even) h3,
+.activity-item:nth-child(even) p {
+  padding-left: 100px;
 }
 
 /* Competition Items */
