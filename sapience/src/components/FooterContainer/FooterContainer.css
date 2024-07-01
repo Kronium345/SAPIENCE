@@ -1,0 +1,32 @@
+/* FooterContainer */
+.footer-container {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+  }
+  
+  .footer-container .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    font-size: 14px;
+  }
+
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    max-width: 1260px;
+    margin: 0 auto;
+    background-color: #007bff;
+    color: white;
+  }
+  

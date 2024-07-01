@@ -1,0 +1,31 @@
+/* ContactContainer */
+.contact-container {
+  background-color: #007bff;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  padding: 5px 0;
+  width: 100%;
+}
+
+.contact-container .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  max-width: 1260px;
+  margin: 0 auto;
+  background-color: #007bff;
+  color: white;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 14px;
+}
