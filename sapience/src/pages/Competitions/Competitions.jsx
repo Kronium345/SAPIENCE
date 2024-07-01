@@ -34,13 +34,13 @@ const Competitions = () => {
               <li>Object recognition and localization</li>
               <li>Soft landing and UAS teaming/cooperation</li>
             </ul>
-            {/* <h3 className="text-2xl font-semibold mb-4">Rules</h3>
+            <h3 className="text-2xl font-semibold mb-4">Rules</h3>
             <ul className="list-disc list-inside mb-4">
               <li>A maximum of two drones can be flown at one time.</li>
               <li>Everyone must be outside of the safety netting while UAVs are armed.</li>
               <li>All UAVs must have an accessible kill switch that shuts off the rotors immediately.</li>
               <li>UAVs must fly below a flight ceiling of 2.5m at all times.</li>
-            </ul> */}
+            </ul>
           </div>
         </div>
       </section>
