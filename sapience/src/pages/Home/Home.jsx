@@ -15,6 +15,13 @@ import image1 from '../../assets/carousel/image1.png';
 import image2 from '../../assets/carousel/image2.png';
 import image3 from '../../assets/carousel/image3.png';
 
+<<<<<<< HEAD
+=======
+// Import preview images
+import previewImage1 from '../../assets/placeholder1.png';
+import previewImage2 from '../../assets/placeholder2.png';
+
+>>>>>>> parent of 4d923ce (Added Placeholder Box)
 const Home = () => {
   const settings = {
     dots: true,
