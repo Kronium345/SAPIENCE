@@ -1,68 +1,81 @@
 .competitions-page {
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .competitions-header {
-    background-color: #f4f4f4;
-    padding: 2rem 0;
-  }
-  
-  .competition-section {
-    margin-bottom: 2rem;
-  }
-  
-  .competition-section h2 {
-    color: #333;
-  }
-  
-  .competition-section p {
-    color: #555;
-  }
-  
-  .competition-details {
-    margin-top: 1rem;
-    text-align: left;
-  }
-  
-  .competition-details h3 {
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-    color: #333;
-  }
-  
-  .competition-details p,
-  .competition-details ul {
-    margin-bottom: 0.5rem;
-  }
-  
-  .competition-details ul {
-    list-style-type: disc;
-    padding-left: 1.5rem;
-  }
-  
-  .success-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
-  }
-  
-  .success-table th,
-  .success-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
-  
-  .success-table th {
-    background-color: #f4f4f4;
-    text-align: left;
-  }
-  
-  .success-table td {
-    background-color: #fff;
-  }
-  
-  .success-table th,
-  .success-table td {
-    color: #333;
-  }
-  
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+}
+
+.competitions-header h2 {
+  padding: 2rem 0;
+  color: black;
+  margin-bottom: 2rem; /* Added margin-bottom to ensure space between header and first competition section */
+}
+
+.competition-section {
+  margin-bottom: 2rem; /* Add margin to create space between competition sections */
+  padding: 2rem;
+  background-color: #143e61; /* Updated to maintain consistency */
+  border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+}
+
+.competition-section h2 {
+  color: white;
+}
+
+.competition-section p {
+  color: white;
+}
+
+.competition-details {
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.competition-details h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.competition-details p,
+.competition-details ul {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.competition-details ul {
+  color: white;
+  font-size: 1.2rem;
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.success-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.success-table th,
+.success-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.success-table th {
+  background-color: #f4f4f4;
+  text-align: left;
+}
+
+.success-table td {
+  background-color: #fff;
+}
+
+.success-table th,
+.success-table td {
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}

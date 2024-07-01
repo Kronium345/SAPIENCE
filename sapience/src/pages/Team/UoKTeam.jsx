@@ -26,16 +26,16 @@ const UoKTeam = () => {
             <div className="team-member">
               <img src={stephanImage} alt="Prof. Stephan Weiss" className="team-img" />
               <p className="team-name">Prof. Stephan Weiss</p>
-              <p className="team-title">Professor of Control of Networked Systems</p>
+              {/* <p className="team-role-detail">Full Professor of Robotics</p> */}
+              <p className="team-title">Technical and Managerial Lead</p>
               {/* <p className="team-time">5%</p> */}
-              <p className="team-role-detail">PPD, Project supervision and guidance PoC</p>
             </div>
             <div className="team-member">
               <img src={lucaImage} alt="Luca Di Pierno" className="team-img" />
               <p className="team-name">Luca Di Pierno</p>
               <p className="team-title">PhD Student</p>
               {/* <p className="team-time">15%</p> */}
-              <p className="team-role-detail">Project supervision and Mission and Path Planning</p>
+              <p className="team-role-detail">Project supervision, Mission and Path Planning</p>
             </div>
             <div className="team-member">
             <FaUserAlt size={150} color="#ccc" className="team-img" />

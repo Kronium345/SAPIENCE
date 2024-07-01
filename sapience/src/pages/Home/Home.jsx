@@ -9,19 +9,24 @@ import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 import './Home.css';
 import { FaRoute, FaSatelliteDish, FaPlane } from 'react-icons/fa';
+import img1 from '../../assets/activities/img1.png';
+import img2 from '../../assets/activities/img2.png';
+import img3 from '../../assets/activities/img3.png';
+import search from '../../assets/search_and_rescue.jpg';
+import drone from '../../assets/drone_swarm.png';
+import bannerImage from '../../assets/blue_map_2.png'
+
+
 
 // Import carousel images
 import image1 from '../../assets/carousel/image1.png';
 import image2 from '../../assets/carousel/image2.png';
 import image3 from '../../assets/carousel/image3.png';
 
-<<<<<<< HEAD
-=======
 // Import preview images
 import previewImage1 from '../../assets/placeholder1.png';
 import previewImage2 from '../../assets/placeholder2.png';
 
->>>>>>> parent of 4d923ce (Added Placeholder Box)
 const Home = () => {
   const settings = {
     dots: true,
@@ -60,7 +65,7 @@ const Home = () => {
     <div className="home">
       <div className="container">
         {/* Hero Section */}
-        <section className="hero h-screen flex flex-col items-center justify-center text-center">
+        <section className="hero h-screen flex flex-col items-center justify-center text-center" style={{ backgroundImage: `url(${bannerImage})` }}>
           <div className="hero-content">
             <h2 className="intro-title">SAPIENCE</h2>
             <p className="intro-subtitle">Sense & Avoid - a cooPeratIvE droNe CompEtition</p>
@@ -68,68 +73,43 @@ const Home = () => {
         </section>
 
         {/* Intro Section */}
-        <section className="intro py-16 bg-gray-200 text-center">
+        <section className="intro py-16 bg-customBlue text-center">
           <div className="intro-container mx-auto px-4">
-            <h2 className="text-4xl font-bold mb-8">Sapience</h2>
-            <p className="text-xl intro-text">
+            <h2 className="text-4xl font-bold mb-8 text-white">Project Goals</h2>
+            {/* <p className="text-xl intro-text">
               This research program is designed as multiple challenges/contests defined for competing teams from multiple leading universities located in NATO member states and NATO partner nations.
-            </p>
-            <p className="text-3xl intro-text text-red-500 font-bold mt-4">
+            </p> */}
+            {/* <p className="text-3xl intro-text text-red-500 font-bold mt-4">
               This project’s interest areas are:
-            </p>
+            </p> */}
             <div className="research-areas-grid">
               <div className="research-area-tile">
-                <FaRoute size={48} className="icon" />
-                <p className="mt-4">Search & Rescue Missions</p>
-                <p className="description">Done for collaborative or cooperative multiple drones investigating different indoor and outdoor settings in a disaster area.</p>
+                <img src={search} alt="Search & Rescue Missions" className="goal-image" />
+                <div className="tile-content">
+                  <p className="mt-4">Reimagining Search & Rescue Missions </p>
+                  <p className="description">Utilising autonomous drones to survey indoor and outdoor environments in disaster areas. Minimising human involvement in dangerous areas and providing first responders with the information they need to achieve the best possible outcome.</p>
+                </div>
               </div>
               <div className="research-area-tile">
-                <FaSatelliteDish size={48} className="icon" />
-                <p className="mt-4">Increasing the level of perception autonomy</p>
-                <p className="description">Done through the artificial intelligence deployed onboard the fleet of multiple air vehicles.</p>
+                <img src={img2} alt="Increasing the level of perception autonomy" className="goal-image" />
+                <div className="tile-content">
+                  <p className="mt-4">Increasing the Level of Perception Autonomy</p>
+                  <p className="description">Enhancing drones' ability to perceive, understand, and navigate their surroundings independently.</p>
+                </div>
               </div>
               <div className="research-area-tile">
-                <FaPlane size={48} className="icon" />
-                <p className="mt-4">Autonomous Cyber (Cyber Soft/Cyber Physical)</p>
-                <p className="description">Said vehicles are capable of sensing and avoiding obstacles, planning and replanning tasks and showing resilience</p>
+                <img src={drone} alt="Showcasing Cooperative Multi-Drone Solutions  " className="goal-image" />
+                <div className="tile-content">
+                  <p className="mt-4">Showcasing Cooperative Multi-Drone Solutions  </p>
+                  <p className="description">Focusing on the interaction and coordination between multiple autonomous agents to achieve complex tasks and improve overall mission efficiency.</p>
+                </div>
               </div>
             </div>
-            <a href="https://www.city.ac.uk/news-and-events/news/2023/09/citys-professor-nabil-aouf-leads-on-the-nato-science-for-peace-and-security-programmes-sapience-drone-competition-project" target="_blank" rel="noopener noreferrer" className="mt-4 px-6 py-2 bg-red-500 text-white rounded-lg inline-block">Read More</a>
+
+            {/* <a href="https://www.city.ac.uk/news-and-events/news/2023/09/citys-professor-nabil-aouf-leads-on-the-nato-science-for-peace-and-security-programmes-sapience-drone-competition-project" target="_blank" rel="noopener noreferrer" className="mt-4 px-6 py-2 bg-red-500 text-white rounded-lg inline-block">Read More</a> */}
           </div>
         </section>
 
-        {/* 4 Lead Section */}
-        <section className="team-section py-16 bg-blue-gradient text-center">
-          <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold mb-8">Project Co-Directors</h2>
-            <div className="team-grid">
-              <div className="team-member">
-                <img src={nabilImage} alt="Prof. Nabil Aouf" className="team-img" />
-                <p className="team-name">Prof. Nabil Aouf</p>
-                <p className="team-role">City, University of London</p>
-                <p className="team-country">United Kingdom</p>
-              </div>
-              <div className="team-member">
-                <img src={stephanImage} alt="Prof. Stephan Weiss" className="team-img" />
-                <p className="team-name">Prof. Stephan Weiss</p>
-                <p className="team-role">University of Klagenfurt</p>
-                <p className="team-country">Austria</p>
-              </div>
-              <div className="team-member">
-                <img src={bryanImage} alt="Dr. Bryan Mesmer" className="team-img" />
-                <p className="team-name">Dr. Bryan Mesmer</p>
-                <p className="team-role">The University of Alabama in Huntsville</p>
-                <p className="team-country">United States</p>
-              </div>
-              <div className="team-member">
-                <img src={ewoudImage} alt="Dr.Ir. Ewoud Smeur" className="team-img" />
-                <p className="team-name">Dr.Ir. Ewoud Smeur</p>
-                <p className="team-role">Delft University of Technology</p>
-                <p className="team-country">Netherlands</p>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Facilities Section */}
         <section className="facilities py-16 bg-gray-100 text-center">
@@ -141,13 +121,48 @@ const Home = () => {
           </div>
         </section>
 
-        {/* Document Section */}
-        <section className="document-section py-16 bg-gradient-to-r from-red-300 via-gray-200 to-red-500 text-center">
+        {/* 4 Lead Section */}
+        <section className="team-section py-16 bg-customBlue text-center">
           <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold mb-8 text-red-500">Read and Download the Leaflet</h2>
+            <h2 className="text-4xl font-bold mb-8">Project Leads</h2>
+            <div className="team-grid">
+              <div className="team-member">
+                <img src={nabilImage} alt="Prof. Nabil Aouf" className="team-img" />
+                <p className="team-name">Prof. Nabil Aouf</p>
+                <p className="team-country">NATO Country Project Director</p>
+                <p className="team-role">City, University of London</p>
+              </div>
+              <div className="team-member">
+                <img src={stephanImage} alt="Prof. Stephan Weiss" className="team-img" />
+                <p className="team-name">Prof. Stephan Weiss</p>
+                <p className="team-country">Partner Country Project Director</p>
+                <p className="team-role">University of Klagenfurt</p>
+              </div>
+              <div className="team-member">
+                <img src={bryanImage} alt="Dr. Bryan Mesmer" className="team-img" />
+                <p className="team-name">Dr. Bryan Mesmer</p>
+                <p className="team-country">Project Co-Director</p>
+                <p className="team-role">The University of Alabama in Huntsville</p>
+              </div>
+              <div className="team-member">
+                <img src={ewoudImage} alt="Dr.Ir. Ewoud Smeur" className="team-img" />
+                <p className="team-name">Dr. Ir. Ewoud Smeur</p>
+                <p className="team-country">Project Co-Director</p>
+                <p className="team-role">Delft University of Technology</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+        {/* Document Section */}
+        <section className="document-section py-16 bg-gray-100 text-center">
+          <div className="container mx-auto px-4">
+            <h2 className="document-text text-4xl font-bold mb-8 text-white">Read and Download the Leaflet</h2>
             <div className="flex flex-col md:flex-row justify-center items-center space-x-4 max-w-4xl mx-auto">
               <div className="w-full md:w-4/5">
-                <a href="/IBP_Problemstatement.docx" download className="block text-red-500 text-xl font-bold mb-4">Download the Leaflet</a>
+                <a href="/IBP_Problemstatement.docx" download className="block text-customBlack text-xl font-bold mb-4">Download the Leaflet</a>
               </div>
               <div className="w-full md:w-1/2 mt-4 md:mt-0">
                 <div className="w-full h-64 object-cover rounded-lg shadow-lg bg-white flex items-center justify-center">

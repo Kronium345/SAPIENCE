@@ -1,11 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-// import natoLogo from '../../assets/nato-line.png';
 
 const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container mx-auto flex justify-between items-center">
         <div className="logo">
           <Link to="/" className="text-xl font-bold">
@@ -25,7 +41,6 @@ const Navbar = () => {
           </li>
           <li><Link to="/activities">Activities</Link></li>
           <li><Link to="/competitions">Competitions</Link></li>
-          {/* <li><Link to="/news">News</Link></li> */}
         </ul>
       </div>
     </nav>

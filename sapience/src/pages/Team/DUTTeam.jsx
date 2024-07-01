@@ -25,10 +25,10 @@ const DUTTeam = () => {
           <div className="team-grid">
             <div className="team-member">
               <img src={ewoudImage} alt="Dr.Ir. Ewoud Smeur" className="team-img" />
-              <p className="team-name">Dr.Ir. Ewoud Smeur</p>
-              <p className="team-title">Assistant Professor</p>
+              <p className="team-name">Dr. Ir. Ewoud Smeur</p>
+              {/* <p className="team-title">Assistant Professor</p> */}
               {/* <p className="team-time">5%</p> */}
-              <p className="team-role-detail">Co-Director NL, Project supervision</p>
+              <p className="team-role-detail">Technical and Managerial Lead</p>
             </div>
             <div className="team-member">
               <img src={bartImage} alt="Bart Remes" className="team-img" />

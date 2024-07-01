@@ -1,11 +1,15 @@
 /* Navbar */
 .navbar {
-  position: relative;
+  position: fixed; /* Make the navbar fixed */
   z-index: 10;
-  transition: all 0.5s ease; /* Increase the transition duration for smoother effect */
-  background: rgba(255, 255, 255, 0.8); /* Initial background with 80% opacity */
+  transition: all 0.5s ease; /* Increase the transition duration for a smoother effect */
+  background: white; /* Initial background */
   width: 100%;
   top: 0;
+}
+
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.8); /* Background with 80% opacity when scrolled */
 }
 
 .navbar .container {
@@ -13,7 +17,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  height: 60px; /* Ensure consistent height */
+  height: 50px; /* Ensure consistent height */
 }
 
 .navbar .logo {
@@ -78,6 +82,11 @@
 
 .navbar ul li ul li a:hover {
   background-color: #f1f1f1;
+}
+
+/* Add padding to the top of the page content to avoid overlap with the fixed navbar */
+body {
+  padding-top: 60px; /* Adjust this value to match the height of your navbar */
 }
 
 /* Responsive Design */

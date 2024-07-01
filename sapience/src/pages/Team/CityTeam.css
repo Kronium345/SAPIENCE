@@ -1,63 +1,70 @@
 .city-team-page {
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .hero {
-    text-align: center;
-    background: linear-gradient(to right, #D3EAF7, #E2E8F0, #F56565);
-    padding: 40px 0;
-  }
-  
-  .team-section {
-    text-align: center;
-    background-color: #f9f9f9;
-    padding: 40px 0;
-  }
-  
-  .team-section h2 {
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .team-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .team-member {
-    margin: 10px;
-    text-align: center;
-    width: 250px; /* Adjusted width for equal sizing */
-  }
-  
-  .team-img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    margin: 0 auto;
-  }
-  
-  
-  .team-img:hover {
-    transform: scale(1.05);
-  }
-  
-  .team-name {
-    margin-top: 10px;
-    color: #E53E3E;
-    font-weight: bold;
-  }
-  
-  .team-role,
-  .team-affiliation,
-  .team-time,
-  .team-responsibility {
-    margin-top: 5px;
-    color: #555;
-    font-size: 0.875rem;
-  }
-  
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #ffffff, #c3d7e0, #4477a1);
+  min-height: 100vh; /* Ensure the page takes at least the full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  text-align: center;
+  background: linear-gradient(to right, #D3EAF7, #E2E8F0, #F56565);
+  padding: 40px 0;
+}
+
+.city-team-page .team-section {
+  text-align: center;
+  background: linear-gradient(to right, #4897cc, #143e61);
+  padding: 40px 0;
+  flex: 1; /* Allow this section to take up remaining space */
+}
+
+.team .container {
+  background-color: #5a6fa9;
+}
+
+.team-section h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-member {
+  margin: 10px;
+  text-align: center;
+  width: 250px;
+}
+
+.team-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin: 0 auto;
+}
+
+.team-img:hover {
+  transform: scale(1.05);
+}
+
+.city-team-page .team-name {
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.city-team-page .team-role,
+.city-team-page .team-affiliation,
+.city-team-page .team-time,
+.city-team-page .team-responsibility {
+  margin-top: 5px;
+  color: white;
+  font-size: 0.875rem;
+}
