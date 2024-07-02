@@ -16,7 +16,7 @@
 .home .hero-content {
   z-index: 1;
   max-width: 800px;
-  margin-bottom: 17rem;
+  margin-bottom: 22rem;
 }
 
 .home .intro-title {
@@ -34,7 +34,7 @@
 .intro,
 .intro,
 .facilities,
-.team-section,
+.leader-section,
 .document-section {
   width: 100%;
   padding: 60px 0;
@@ -56,12 +56,12 @@
 }
 
 .intro {
-  background-color: #2E5A88;
+  background-color: #143e61;
 }
 
 .intro .intro-container,
 .facilities .facilities-container,
-.team-section .container,
+.leader-section .container,
 .document-section .container {
   max-width: 1200px;
   padding: 0 20px;
@@ -155,13 +155,13 @@
   border: 2px solid #333;
 }
 
-.home .team-section {
+.home .leader-section {
   text-align: center;
-  background: linear-gradient(to right, #5A6FA9, #5A6FA9);
+  background-color: #143e61;
   padding: 40px 0;
 }
 
-.home .team-section h2 {
+.home .leader-section h2 {
   color: white;
   margin-bottom: 20px;
 }
@@ -186,6 +186,40 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   margin: 0 auto;
+}
+
+.logo-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%; /* Adjust border-radius as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin: 20px auto 0;
+  /* margin-top: 40px; */
+}
+
+.city-logo-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%; /* Adjust border-radius as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin: 20px auto 0;
+  margin-top: 1px; /* Adjust this value to match the height with other logos */
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
+}
+
+.city-logo-img:hover {
+  transform: scale(1.05);
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
 }
 
 .team-img:hover {

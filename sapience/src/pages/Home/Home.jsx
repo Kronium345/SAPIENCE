@@ -15,6 +15,11 @@ import img3 from '../../assets/activities/img3.png';
 import search from '../../assets/search_and_rescue.jpg';
 import drone from '../../assets/drone_swarm.png';
 import bannerImage from '../../assets/blue_map_2.png'
+import natoBanner from '../../assets/sprg.png';
+import cityLogo from '../../assets/city-logo.jpeg';
+import uokLogo from '../../assets/uok-logo.jpeg';
+import uahLogo from '../../assets/uah-logo.png';
+import dutLogo from '../../assets/dut-logo.png';
 
 
 
@@ -72,8 +77,11 @@ const Home = () => {
           </div>
         </section>
 
+        <section className="banner" style={{ backgroundImage: `url(${natoBanner})`, height: '200px', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        </section>
+
         {/* Intro Section */}
-        <section className="intro py-16 bg-customBlue text-center">
+        <section className="intro py-16 text-center">
           <div className="intro-container mx-auto px-4">
             <h2 className="text-4xl font-bold mb-8 text-white">Project Goals</h2>
             {/* <p className="text-xl intro-text">
@@ -94,7 +102,7 @@ const Home = () => {
                 <img src={img2} alt="Increasing the level of perception autonomy" className="goal-image" />
                 <div className="tile-content">
                   <p className="mt-4">Increasing the Level of Perception Autonomy</p>
-                  <p className="description">Enhancing drones' ability to perceive, understand, and navigate their surroundings independently.</p>
+                  <p className="description">Enhancing drones' ability to perceive, understand, and navigate their surroundings independently. Allowing them to operate in diverse environments, adapting to new challenges in real-time.</p>
                 </div>
               </div>
               <div className="research-area-tile">
@@ -122,33 +130,37 @@ const Home = () => {
         </section>
 
         {/* 4 Lead Section */}
-        <section className="team-section py-16 bg-customBlue text-center">
+        <section className="leader-section py-16 text-center">
           <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold mb-8">Project Leads</h2>
+            <h2 className="text-4xl font-bold mb-8">Project Partners</h2>
             <div className="team-grid">
               <div className="team-member">
                 <img src={nabilImage} alt="Prof. Nabil Aouf" className="team-img" />
                 <p className="team-name">Prof. Nabil Aouf</p>
-                <p className="team-country">NATO Country Project Director</p>
+                <p className="team-country">Project Lead and NATO Country Project Director</p>
                 <p className="team-role">City, University of London</p>
+                <img src={cityLogo} alt="City Logo" className="city-logo-img" />
               </div>
               <div className="team-member">
                 <img src={stephanImage} alt="Prof. Stephan Weiss" className="team-img" />
                 <p className="team-name">Prof. Stephan Weiss</p>
                 <p className="team-country">Partner Country Project Director</p>
                 <p className="team-role">University of Klagenfurt</p>
+                <img src={uokLogo} alt="UOK Logo" className="logo-img" />
               </div>
               <div className="team-member">
                 <img src={bryanImage} alt="Dr. Bryan Mesmer" className="team-img" />
                 <p className="team-name">Dr. Bryan Mesmer</p>
                 <p className="team-country">Project Co-Director</p>
                 <p className="team-role">The University of Alabama in Huntsville</p>
+                <img src={uahLogo} alt="UAH Logo" className="logo-img" />
               </div>
               <div className="team-member">
                 <img src={ewoudImage} alt="Dr.Ir. Ewoud Smeur" className="team-img" />
                 <p className="team-name">Dr. Ir. Ewoud Smeur</p>
                 <p className="team-country">Project Co-Director</p>
                 <p className="team-role">Delft University of Technology</p>
+                <img src={dutLogo} alt="DUT Logo" className="logo-img" />
               </div>
             </div>
           </div>

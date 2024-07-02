@@ -32,7 +32,7 @@ const Activities = () => {
               <div className="activity-content">
                 <h3 className="text-2xl font-bold mb-4">Mapping</h3>
                 <p className="mb-4">
-                  Drones will create high-quality digital maps of unknown environments by fusing data from various sensors. This allows robots and humans to gain prior knowledge of an area without exposing themselves to danger.
+                Drones will create high-quality digital maps of unknown spaces by fusing data from various sensors. This capability provides valuable situational awareness to robots and humans, allowing them to gain prior knowledge of an area without exposing themselves to danger. The detailed maps produced can aid in planning, navigation, and decision-making processes, especially in challenging or hazardous environments.
                 </p>
               </div>
             </div>
@@ -42,7 +42,7 @@ const Activities = () => {
               <div className="activity-content">
                 <h3 className="text-2xl font-bold mb-4">Object Detection</h3>
                 <p className="mb-4">
-                  Drones must identify, classify, and locate objects within their working areas. This capability is crucial for search and rescue missions, where faster detection of missing persons increases their chances of survival, and accurate identification of hazards enhances mission safety.
+                Drones must identify, classify, and locate objects within their working areas. This capability is crucial for search and rescue missions, where faster detection of missing persons increases their chances of survival, and accurate identification of hazards enhances mission safety. By improving object detection capabilities, drones can effectively support emergency responders and ensure safer operations in a variety of scenarios.
                 </p>
               </div>
             </div>
@@ -52,7 +52,7 @@ const Activities = () => {
               <div className="activity-content">
                 <h3 className="text-2xl font-bold mb-4">Soft Landing</h3>
                 <p className="mb-4">
-                  Demonstrating safe and precise landings, drones will operate delicately in sensitive or hazardous environments. This feature ensures the safe delivery of aid and reduces the risk of damage to equipment and surroundings.
+                Demonstrating safe and precise landings, drones will operate delicately in sensitive or hazardous environments. This feature ensures the safe delivery of aid and reduces the risk of damage to equipment and surroundings. By perfecting soft landing techniques, drones can be relied upon to perform critical tasks in areas where human intervention may be dangerous or impractical.
                 </p>
               </div>
             </div>
@@ -62,7 +62,7 @@ const Activities = () => {
               <div className="activity-content">
                 <h3 className="text-2xl font-bold mb-4">Guidance and Navigation</h3>
                 <p className="mb-4">
-                  Demonstrating safe and precise landings, drones will operate delicately in sensitive or hazardous environments. This feature ensures the safe delivery of aid and reduces the risk of damage to equipment and surroundings.
+                Drones will navigate complex environments independently, without human intervention. This autonomy removes the need for a controller, lowering operational costs and increasing efficiency. Enhanced guidance and navigation systems enable drones to adapt to dynamic situations, avoid obstacles, and execute missions with high precision and reliability.
                 </p>
               </div>
             </div>
@@ -72,7 +72,7 @@ const Activities = () => {
               <div className="activity-content">
                 <h3 className="text-2xl font-bold mb-4">Task Allocation</h3>
                 <p className="mb-4">
-                  Drones will coordinate to distribute tasks efficiently, showcasing advanced collaborative capabilities. This leads to better resource utilisation, quicker task completion, and effective operation in communication-denied environments.
+                Drones will coordinate to distribute tasks efficiently, showcasing advanced collaborative capabilities. This leads to better resource utilisation, quicker task completion, and effective operation in communication-denied environments. By demonstrating autonomous task allocation, drones can handle complex missions effectively, reducing the need for constant human oversight and improving overall mission success rates.
                 </p>
               </div>
             </div>
@@ -90,7 +90,7 @@ const Activities = () => {
               </div>
               <div>
                 <p className="mb-4">
-                  This competition involves exploring and mapping an indoor environment. The primary tasks include creating a map, detecting objects, and delivering aid packages. The outcome focuses on accuracy and speed. Each team will perform independently, demonstrating their capability to handle disaster scenarios in indoor settings. The teams use RGBD cameras and IMU for precise mapping and object detection.
+                The first competition challenges drones to navigate a GPS-denied environment, simulating a disaster-stricken building. Drones must rely on onboard sensors and advanced navigation algorithms to manoeuvre through confined spaces and create detailed maps of the area. Additionally, drones must identify people in need, detect hazards and obstacles, and deliver aid to those requiring assistance. This competition tests the drones' ability to operate effectively in close quarters and under challenging conditions.
                 </p>
               </div>
             </div>
@@ -104,7 +104,7 @@ const Activities = () => {
               </div>
               <div>
                 <p className="mb-4">
-                  This competition is set in an outdoor environment, focusing on locating injured persons and delivering supplies. It is divided into two phases: mapping the area and a collaborative aid delivery task. The outcome emphasizes the collaborative efforts of multiple teams, adapting to dynamic changes in the mission objectives. In Phase 2, the teams collaborate to perform aid delivery tasks, demonstrating their ability to work together under changing conditions.
+                Set in an outdoor environment, this competition focuses on locating injured persons and delivering supplies. It consists of two phases: the first phase involves mapping the area, and the second phase features a collaborative aid delivery task. Teams must adapt to dynamic changes in mission objectives, emphasising their ability to work together. The outcome highlights the importance of collaboration, with teams demonstrating their capability to perform aid delivery tasks under evolving conditions.
                 </p>
               </div>
             </div>
@@ -118,7 +118,7 @@ const Activities = () => {
               </div>
               <div>
                 <p className="mb-4">
-                  This competition combines indoor and outdoor environments, requiring teams to switch between different sensor systems. Tasks include mapping, object recognition, and taking appropriate actions based on the identified objects. The outcome is aimed at testing the robustness and adaptability of the teams' solutions in varied environments. The teams use a combination of indoor and outdoor sensors to navigate and perform tasks effectively.
+                This competition combines both indoor and outdoor environments, requiring teams to switch between different sensor systems. Tasks include mapping, object recognition, and taking appropriate actions based on the identified objects. The aim is to test the robustness and adaptability of the teams' solutions in varied settings. Teams will use a combination of sensors to navigate and perform tasks effectively, showcasing their ability to handle diverse and complex scenarios.
                 </p>
               </div>
             </div>
