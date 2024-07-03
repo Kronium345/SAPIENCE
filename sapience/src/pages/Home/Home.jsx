@@ -4,67 +4,21 @@ import nabilImage from '../../assets/team/nabil.png';
 import stephanImage from '../../assets/team/stephen.jpeg';
 import bryanImage from '../../assets/team/bryan.jpeg';
 import ewoudImage from '../../assets/team/ewoud.jpeg';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import Slider from 'react-slick';
-import './Home.css';
-import { FaRoute, FaSatelliteDish, FaPlane } from 'react-icons/fa';
 import img1 from '../../assets/activities/img1.png';
 import img2 from '../../assets/activities/img2.png';
 import img3 from '../../assets/activities/img3.png';
 import search from '../../assets/search_and_rescue.jpg';
 import drone from '../../assets/drone_swarm.png';
-import bannerImage from '../../assets/blue_map_2.png'
+import bannerImage from '../../assets/blue_map_2.png';
 import natoBanner from '../../assets/sprg.png';
 import cityLogo from '../../assets/city-logo.jpeg';
 import uokLogo from '../../assets/uok-logo.jpeg';
 import uahLogo from '../../assets/uah-logo.png';
 import dutLogo from '../../assets/dut-logo.png';
-
-
-
-// Import carousel images
-import image1 from '../../assets/carousel/image1.png';
-import image2 from '../../assets/carousel/image2.png';
-import image3 from '../../assets/carousel/image3.png';
-
-// Import preview images
-import previewImage1 from '../../assets/placeholder1.png';
-import previewImage2 from '../../assets/placeholder2.png';
+import './Home.css';
 
 const Home = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
-  };
 
-  function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={`${className} custom-arrow next`}
-        style={{ ...style }}
-        onClick={onClick}
-      />
-    );
-  }
-
-  function SamplePrevArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={`${className} custom-arrow prev`}
-        style={{ ...style }}
-        onClick={onClick}
-      />
-    );
-  }
 
   return (
     <div className="home">
@@ -77,24 +31,18 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="banner" style={{ backgroundImage: `url(${natoBanner})`, height: '200px', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        </section>
+          <section className="banner" style={{ backgroundImage: `url(${natoBanner})` }}>
+          </section>
 
         {/* Intro Section */}
         <section className="intro py-16 text-center">
           <div className="intro-container mx-auto px-4">
             <h2 className="text-4xl font-bold mb-8 text-white">Project Goals</h2>
-            {/* <p className="text-xl intro-text">
-              This research program is designed as multiple challenges/contests defined for competing teams from multiple leading universities located in NATO member states and NATO partner nations.
-            </p> */}
-            {/* <p className="text-3xl intro-text text-red-500 font-bold mt-4">
-              This project’s interest areas are:
-            </p> */}
             <div className="research-areas-grid">
               <div className="research-area-tile">
                 <img src={search} alt="Search & Rescue Missions" className="goal-image" />
                 <div className="tile-content">
-                  <p className="mt-4">Reimagining Search & Rescue Missions </p>
+                  <p className="mt-4">Reimagining Search & Rescue Missions</p>
                   <p className="description">Utilising autonomous drones to survey indoor and outdoor environments in disaster areas. Minimising human involvement in dangerous areas and providing first responders with the information they need to achieve the best possible outcome.</p>
                 </div>
               </div>
@@ -106,18 +54,15 @@ const Home = () => {
                 </div>
               </div>
               <div className="research-area-tile">
-                <img src={drone} alt="Showcasing Cooperative Multi-Drone Solutions  " className="goal-image" />
+                <img src={drone} alt="Showcasing Cooperative Multi-Drone Solutions" className="goal-image" />
                 <div className="tile-content">
-                  <p className="mt-4">Showcasing Cooperative Multi-Drone Solutions  </p>
+                  <p className="mt-4">Showcasing Cooperative Multi-Drone Solutions</p>
                   <p className="description">Focusing on the interaction and coordination between multiple autonomous agents to achieve complex tasks and improve overall mission efficiency.</p>
                 </div>
               </div>
             </div>
-
-            {/* <a href="https://www.city.ac.uk/news-and-events/news/2023/09/citys-professor-nabil-aouf-leads-on-the-nato-science-for-peace-and-security-programmes-sapience-drone-competition-project" target="_blank" rel="noopener noreferrer" className="mt-4 px-6 py-2 bg-red-500 text-white rounded-lg inline-block">Read More</a> */}
           </div>
         </section>
-
 
         {/* Facilities Section */}
         <section className="facilities py-16 bg-gray-100 text-center">
@@ -129,44 +74,50 @@ const Home = () => {
           </div>
         </section>
 
-        {/* 4 Lead Section */}
+        {/* Project Partners Section */}
         <section className="leader-section py-16 text-center">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold mb-8">Project Partners</h2>
             <div className="team-grid">
               <div className="team-member">
                 <img src={nabilImage} alt="Prof. Nabil Aouf" className="team-img" />
-                <p className="team-name">Prof. Nabil Aouf</p>
-                <p className="team-country">Project Lead and NATO Country Project Director</p>
-                <p className="team-role">City, University of London</p>
+                <div className="team-info">
+                  <p className="team-name">Prof. Nabil Aouf</p>
+                  <p className="team-country">Project Lead and NATO Country Project Director</p>
+                  <p className="team-role">City, University of London</p>
+                </div>
                 <img src={cityLogo} alt="City Logo" className="city-logo-img" />
               </div>
               <div className="team-member">
                 <img src={stephanImage} alt="Prof. Stephan Weiss" className="team-img" />
-                <p className="team-name">Prof. Stephan Weiss</p>
-                <p className="team-country">Partner Country Project Director</p>
-                <p className="team-role">University of Klagenfurt</p>
+                <div className="team-info">
+                  <p className="team-name">Prof. Stephan Weiss</p>
+                  <p className="team-country">Partner Country Project Director</p>
+                  <p className="team-role">University of Klagenfurt</p>
+                </div>
                 <img src={uokLogo} alt="UOK Logo" className="logo-img" />
               </div>
               <div className="team-member">
                 <img src={bryanImage} alt="Dr. Bryan Mesmer" className="team-img" />
-                <p className="team-name">Dr. Bryan Mesmer</p>
-                <p className="team-country">Project Co-Director</p>
-                <p className="team-role">The University of Alabama in Huntsville</p>
+                <div className="team-info">
+                  <p className="team-name">Dr. Bryan Mesmer</p>
+                  <p className="team-country">Project Co-Director</p>
+                  <p className="team-role">The University of Alabama in Huntsville</p>
+                </div>
                 <img src={uahLogo} alt="UAH Logo" className="logo-img" />
               </div>
               <div className="team-member">
-                <img src={ewoudImage} alt="Dr.Ir. Ewoud Smeur" className="team-img" />
-                <p className="team-name">Dr. Ir. Ewoud Smeur</p>
-                <p className="team-country">Project Co-Director</p>
-                <p className="team-role">Delft University of Technology</p>
+                <img src={ewoudImage} alt="Dr. Ir. Ewoud Smeur" className="team-img" />
+                <div className="team-info">
+                  <p className="team-name">Dr. Ir. Ewoud Smeur</p>
+                  <p className="team-country">Project Co-Director</p>
+                  <p className="team-role">Delft University of Technology</p>
+                </div>
                 <img src={dutLogo} alt="DUT Logo" className="logo-img" />
               </div>
             </div>
           </div>
         </section>
-
-
 
         {/* Document Section */}
         <section className="document-section py-16 bg-gray-100 text-center">

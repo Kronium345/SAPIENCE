@@ -36,6 +36,7 @@
 .team-member {
   margin: 10px;
   text-align: center;
+  width: 250px;
 }
 
 .team-img {
@@ -79,11 +80,13 @@
 }
 
 @media (max-width: 768px) {
-  .team-grid {
-    display: block;
+  .team-member {
+    width: 100%;
+    margin: 10px 0;
   }
 
-  .team-member {
-    margin-bottom: 20px;
+  .team-img {
+    width: 120px;
+    height: 120px;
   }
 }

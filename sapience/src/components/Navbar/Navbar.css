@@ -1,9 +1,9 @@
 /* Navbar */
 .navbar {
-  position: fixed; /* Make the navbar fixed */
+  position: fixed;
   z-index: 10;
-  transition: all 0.5s ease; /* Increase the transition duration for a smoother effect */
-  background: white; /* Initial background */
+  transition: all 0.5s ease;
+  background: white;
   width: 100%;
   top: 0;
   left: 0;
@@ -11,7 +11,7 @@
 }
 
 .navbar.scrolled {
-  background: rgba(255, 255, 255, 0.8); /* Background with 80% opacity when scrolled */
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .navbar .container {
@@ -19,7 +19,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  height: 50px; /* Ensure consistent height */
+  height: 50px;
 }
 
 .navbar .logo {
@@ -31,8 +31,9 @@
   color: inherit;
 }
 
-.navbar .logo img {
-  height: 40px; /* Adjust the height to make the logo smaller */
+.navbar .nav-links {
+  display: flex;
+  gap: 1.5rem;
 }
 
 .navbar ul {
@@ -44,7 +45,7 @@
 }
 
 .navbar ul li {
-  margin: 0 15px; /* Margin for consistent spacing */
+  margin: 0 15px;
   position: relative;
 }
 
@@ -56,26 +57,32 @@
 }
 
 .navbar ul li a:hover {
-  color: #e53e3e; /* Change to your desired hover color */
+  color: #e53e3e;
+}
+
+.navbar ul li:first-child {
+  margin-left: 22px; /* Adjust this value to shift the Home link to the right */
 }
 
 .navbar ul li ul {
   display: none;
   position: absolute;
   top: 100%;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   z-index: 1000;
+  width: 200px; /* Ensure consistent width */
 }
 
-.navbar ul li:hover ul {
+.navbar ul li:focus ul {
   display: block;
 }
 
 .navbar ul li ul li {
-  width: 160px;
+  width: 100%; /* Ensure consistent width */
 }
 
 .navbar ul li ul li a {
@@ -86,9 +93,61 @@
   background-color: #f1f1f1;
 }
 
+.menu-bar {
+  display: none;
+}
+
+.menu-bar .menu-icon {
+  font-size: 1.5rem;
+  user-select: none;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
-  .navbar .container {
+  .navbar .nav-links {
+    display: none;
     flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+  }
+
+  .navbar .nav-links.open {
+    display: flex;
+  }
+
+  .navbar .menu-bar {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    align-items: center;
+  }
+
+  .navbar ul li {
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar ul li ul {
+    position: static;
+    transform: none;
+    width: 100%;
+  }
+
+  .navbar ul li ul li a {
+    padding: 10px;
   }
 }

@@ -7,14 +7,14 @@ html, body {
 
 .activities-page {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to right, #4897cc, #143e61); /* Updated background gradient */
-  min-height: 100vh; /* Ensure the page covers the full viewport height */
+  background: linear-gradient(to right, #4897cc, #143e61);
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 .wrapper {
-  flex: 1; /* Ensure the wrapper takes the available space */
+  flex: 1;
 }
 
 header h2 {
@@ -110,18 +110,22 @@ header h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .activity-item img {
-  width: 40%;
-  height: 300px; /* Increased height for images */
-  object-fit: cover; /* Ensures images maintain aspect ratio */
+  width: 100%;
+  height: auto;
+  max-width: 40%; /* Limit max width */
+  max-height: 300px; /* Limit max height */
+  object-fit: cover;
   border-radius: 10px;
 }
 
 .activity-content {
-  width: 50%;
-  padding-right: 100px; /* Added padding to ensure spacing */
+  width: 100%;
+  max-width: 50%;
+  padding: 20px;
 }
 
 .activity-item p {
@@ -133,11 +137,6 @@ header h2 {
 /* Even items: image on the right, text on the left */
 .activity-item:nth-child(even) {
   flex-direction: row-reverse;
-}
-
-.activity-item:nth-child(even) .activity-content {
-  padding-left: 100px; /* Align even items with odd items */
-  padding-right: 0; /* Remove right padding for even items */
 }
 
 /* Competition Items */
@@ -152,12 +151,49 @@ header h2 {
 
 .activity-images {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .activity-images img {
-  width: 32%; /* Three images in a row */
-  height: 300px; /* Increased height for images */
-  object-fit: cover; /* Ensures images maintain aspect ratio */
+  width: 100%;
+  height: auto;
+  max-width: 32%;
+  max-height: 300px;
+  object-fit: cover;
   border-radius: 10px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  header h2 {
+    font-size: 2rem;
+  }
+
+  .activities-intro {
+    font-size: 1.5rem;
+  }
+
+  .activity-content {
+    padding: 10px;
+  }
+
+  .activity-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .activity-item img {
+    max-width: 100%;
+  }
+
+  .activity-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .activity-images img {
+    max-width: 100%;
+  }
 }

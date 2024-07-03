@@ -15,12 +15,11 @@ const CityTeam = () => {
     <div className="city-team-page">
       <section className="team-section">
         <div className="container">
-        <h2 className="text-4xl font-bold mb-8 text-white">City, University of London</h2>
+          <h2 className="text-4xl font-bold mb-8 text-white">City, University of London</h2>
           <div className="team-grid">
             <div className="team-member">
               <img src={nabilImage} alt="Prof. Nabil Aouf" className="team-img" />
               <p className="team-name">Prof. Nabil Aouf</p>
-              {/* <p className="team-role">Professor of Autonomous Systems and Machine Intelligence</p> */}
               <p className="team-responsibility">Technical and Managerial Lead</p>
             </div>
             <div className="team-member">

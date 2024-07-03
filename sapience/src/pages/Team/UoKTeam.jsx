@@ -38,7 +38,7 @@ const UoKTeam = () => {
               <p className="team-role-detail">Project supervision, Mission and Path Planning</p>
             </div>
             <div className="team-member">
-            <FaUserAlt size={150} color="#ccc" className="team-img" />
+              <FaUserAlt size={150} color="#ccc" className="team-img" />
               <p className="team-name">Georg Steinthaler</p>
               <p className="team-title">BS Student</p>
               {/* <p className="team-time">15%</p> */}
@@ -52,7 +52,7 @@ const UoKTeam = () => {
               <p className="team-role-detail">Perception & AI</p>
             </div>
             <div className="team-member">
-            <FaUserAlt size={150} color="#ccc" className="team-img" />
+              <FaUserAlt size={150} color="#ccc" className="team-img" />
               <p className="team-name">Marcel Lorber</p>
               <p className="team-title">BS Student</p>
               {/* <p className="team-time">15%</p> */}
@@ -66,7 +66,7 @@ const UoKTeam = () => {
               <p className="team-role-detail">Control & Estimation</p>
             </div>
             <div className="team-member">
-            <FaUserAlt size={150} color="#ccc" className="team-img" />
+              <FaUserAlt size={150} color="#ccc" className="team-img" />
               <p className="team-name">Ben Wesse</p>
               <p className="team-title">MS Student</p>
               {/* <p className="team-time">15%</p> */}

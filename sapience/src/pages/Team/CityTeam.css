@@ -68,3 +68,16 @@
   color: white;
   font-size: 0.875rem;
 }
+
+/* Media query for mobile responsiveness */
+@media (max-width: 600px) {
+  .team-member {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .team-img {
+    width: 120px;
+    height: 120px;
+  }
+}

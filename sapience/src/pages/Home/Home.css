@@ -1,16 +1,19 @@
+/* Home.css */
+
 /* Hero Section */
 .home .hero {
   position: relative;
   width: 100%;
-  height: 100vh; /* Make sure the hero section takes the full height of the viewport */
+  height: 100vh; /* Subtracting banner height to fit the screen */
   background-size: cover;
   background-position: center;
   display: flex;
+  flex-direction: column; /* Ensure the content stacks vertically */
   align-items: center;
   justify-content: center;
   text-align: center;
   overflow: hidden;
-  margin-bottom: 0; /* Ensure there's no margin below the hero section */
+  margin: 0; /* No margin */
 }
 
 .home .hero-content {
@@ -31,15 +34,35 @@
   margin-top: 1rem;
 }
 
-.intro,
+/* Banner Section */
+.banner {
+  width: 100%;
+  height: 200px; /* Fixed height for the banner */
+  background-size: contain; /* Ensure the entire image is contained */
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  margin: 0; /* No margin */
+  padding: 0; /* No padding */
+  border: 8px solid black; /* Thick border to hide spacing */
+  box-sizing: border-box; 
+}
+
+@media (max-width: 768px) {
+  .banner {
+    display: none; /* Hides the banner on smaller screens */
+  }
+}
+
+/* Intro Section */
 .intro,
 .facilities,
 .leader-section,
 .document-section {
   width: 100%;
   padding: 60px 0;
-  background-color: #ffffff; /* Ensure the background is white */
-  margin-top: 0; /* Remove any margin at the top */
+  background-color: #ffffff; /* White background */
+  margin: 0; /* No margin */
 }
 
 .home .document-section {
@@ -51,7 +74,7 @@
   color: black;
 }
 
-.home .document-text{
+.home .document-text {
   margin-bottom: 40px;
 }
 
@@ -77,6 +100,12 @@
   justify-content: space-around;
 }
 
+@media (max-width: 768px) {
+  .research-areas-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .research-area-tile {
   background: white;
   padding: 1rem;
@@ -89,7 +118,7 @@
   align-items: center;
   text-align: center;
   width: 300px;
-  height: auto; /* Adjusted to fit content */
+  height: auto; /* Adjust to fit content */
 }
 
 .research-area-tile:hover {
@@ -98,8 +127,8 @@
 
 .goal-image {
   width: 100%;
-  height: 200px; /* Set a fixed height for uniform image size */
-  object-fit: cover; /* Ensures images maintain aspect ratio */
+  height: 200px; /* Fixed height for uniform image size */
+  object-fit: cover; /* Maintain aspect ratio */
   border-radius: 8px 8px 0 0;
 }
 
@@ -119,6 +148,7 @@
   color: #555;
 }
 
+/* Custom Arrows for Carousel */
 .custom-arrow {
   width: 50px;
   height: 50px;
@@ -155,10 +185,12 @@
   border: 2px solid #333;
 }
 
+/* Leader Section */
 .home .leader-section {
   text-align: center;
   background-color: #143e61;
   padding: 40px 0;
+  margin: 0; /* No margin */
 }
 
 .home .leader-section h2 {
@@ -170,6 +202,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .team-grid {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .team-member {
@@ -188,40 +227,23 @@
   margin: 0 auto;
 }
 
-.logo-img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%; /* Adjust border-radius as needed */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  margin: 20px auto 0;
-  /* margin-top: 40px; */
-}
-
+.logo-img,
 .city-logo-img {
   width: 150px;
   height: 150px;
   object-fit: cover;
-  border-radius: 50%; /* Adjust border-radius as needed */
+  border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  margin: 20px auto 0;
-  margin-top: 1px; /* Adjust this value to match the height with other logos */
+  margin: 10px auto;
 }
 
-.logo-img:hover {
-  transform: scale(1.05);
+.city-logo-img {
+  margin-top: 10px; /* Adjust this margin to align with other logos */
 }
 
-.city-logo-img:hover {
-  transform: scale(1.05);
-}
-
-.logo-img:hover {
-  transform: scale(1.05);
-}
-
+.logo-img:hover,
+.city-logo-img:hover,
 .team-img:hover {
   transform: scale(1.05);
 }
@@ -240,10 +262,7 @@
   font-size: 0.875rem;
 }
 
-.home .team-country {
-  color: white;
-}
-
+.home .team-country,
 .home .team-role {
   color: white;
 }
@@ -264,6 +283,11 @@
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;
+}
+
+/* Fixed height for text containers to ensure logo alignment */
+.team-member .team-info {
+  height: 120px;
 }
 
 @media (max-width: 768px) {
