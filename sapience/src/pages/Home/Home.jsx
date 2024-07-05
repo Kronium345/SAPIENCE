@@ -10,7 +10,7 @@ import img3 from '../../assets/activities/img3.png';
 import search from '../../assets/search_and_rescue.jpg';
 import drone from '../../assets/drone_swarm.png';
 import bannerImage from '../../assets/blue_map_2.png';
-import newBanner from '../../assets/new-banner.jpg'
+import newBanner from '../../assets/blue_map_2.jpg'
 import natoBanner from '../../assets/sprg.png';
 import cityLogo from '../../assets/city-logo.jpeg';
 import uokLogo from '../../assets/uok-logo.jpeg';
