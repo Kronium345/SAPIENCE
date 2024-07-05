@@ -4,7 +4,7 @@
 .home .hero {
   position: relative;
   width: 100%;
-  height: 100vh; /* Subtracting banner height to fit the screen */
+  height: calc(100vh - 150px); /* Subtracting banner height to fit the screen */
   background-size: cover;
   background-position: center;
   display: flex;

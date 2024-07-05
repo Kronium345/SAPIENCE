@@ -10,6 +10,7 @@ import img3 from '../../assets/activities/img3.png';
 import search from '../../assets/search_and_rescue.jpg';
 import drone from '../../assets/drone_swarm.png';
 import bannerImage from '../../assets/blue_map_2.png';
+import newBanner from '../../assets/new-banner.jpg'
 import natoBanner from '../../assets/sprg.png';
 import cityLogo from '../../assets/city-logo.jpeg';
 import uokLogo from '../../assets/uok-logo.jpeg';
@@ -24,7 +25,7 @@ const Home = () => {
     <div className="home">
       <div className="container">
         {/* Hero Section */}
-        <section className="hero h-screen flex flex-col items-center justify-center text-center" style={{ backgroundImage: `url(${bannerImage})` }}>
+        <section className="hero h-screen flex flex-col items-center justify-center text-center" style={{ backgroundImage: `url(${newBanner})` }}>
           <div className="hero-content">
             <h2 className="intro-title">SAPIENCE</h2>
             <p className="intro-subtitle">Sense & Avoid - a cooPeratIvE droNe CompEtition</p>

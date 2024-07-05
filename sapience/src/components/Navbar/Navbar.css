@@ -60,16 +60,11 @@
   color: #e53e3e;
 }
 
-.navbar ul li:first-child {
-  margin-left: 22px; /* Adjust this value to shift the Home link to the right */
-}
-
 .navbar ul li ul {
   display: none;
   position: absolute;
   top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -77,16 +72,23 @@
   width: 200px; /* Ensure consistent width */
 }
 
-.navbar ul li:focus ul {
+.navbar ul li:hover ul {
   display: block;
 }
 
 .navbar ul li ul li {
-  width: 100%; /* Ensure consistent width */
+  width: 90%; /* Ensure consistent width */
+}
+
+.navbar ul li ul li:first-child {
+  width: 89%; /* Ensure consistent width */
 }
 
 .navbar ul li ul li a {
   padding: 10px 20px;
+  display: block;
+  width: 100%; /* Ensure consistent width */
+  box-sizing: border-box;
 }
 
 .navbar ul li ul li a:hover {
@@ -140,6 +142,7 @@
     width: 100%;
     text-align: center;
   }
+  
 
   .navbar ul li ul {
     position: static;

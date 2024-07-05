@@ -14,6 +14,12 @@ import outdoor3 from '../../assets/activities/outdoor3.jpg';
 import competition1 from '../../assets/competition1-image.jpeg';
 import competition2 from '../../assets/competition2-image.jpeg';
 import competition3 from '../../assets/competition3-image.png';
+import softLanding from '../../assets/activities/soft-landing.jpg'
+import comp2 from '../../assets/activities/Comp2.jpg';
+import mapping from '../../assets/activities/mapping.jpg';
+import objectDetection from '../../assets/activities/ObjectDetection.jpg';
+import guidanceNavigation from '../../assets/activities/guidance-example-1.jpg';
+import taskAllocation from '../../assets/activities/task-allocation-example6.jpg';
 import './Activities.css';
 
 const Activities = () => {
@@ -28,7 +34,7 @@ const Activities = () => {
 
           <div className="container">
             <div className="activity-item">
-              <img src={img1} alt="Mapping" className="activity-image" />
+              <img src={mapping} alt="Mapping" className="activity-image" />
               <div className="activity-content">
                 <h3 className="text-2xl font-bold mb-4">Mapping</h3>
                 <p className="mb-4">
@@ -38,7 +44,7 @@ const Activities = () => {
             </div>
 
             <div className="activity-item">
-              <img src={img2} alt="Object Detection" className="activity-image" />
+              <img src={objectDetection} alt="Object Detection" className="activity-image" />
               <div className="activity-content">
                 <h3 className="text-2xl font-bold mb-4">Object Detection</h3>
                 <p className="mb-4">
@@ -48,7 +54,7 @@ const Activities = () => {
             </div>
 
             <div className="activity-item">
-              <img src={img3} alt="Soft Landing" className="activity-image" />
+              <img src={softLanding} alt="Soft Landing" className="activity-image" />
               <div className="activity-content">
                 <h3 className="text-2xl font-bold mb-4">Soft Landing</h3>
                 <p className="mb-4">
@@ -58,7 +64,7 @@ const Activities = () => {
             </div>
 
             <div className="activity-item">
-              <img src={img3} alt="Guidance and Navigation" className="activity-image" />
+              <img src={guidanceNavigation} alt="Guidance and Navigation" className="activity-image" />
               <div className="activity-content">
                 <h3 className="text-2xl font-bold mb-4">Guidance and Navigation</h3>
                 <p className="mb-4">
@@ -68,7 +74,7 @@ const Activities = () => {
             </div>
 
             <div className="activity-item">
-              <img src={img3} alt="Task Allocation" className="activity-image" />
+              <img src={taskAllocation} alt="Task Allocation" className="activity-image" />
               <div className="activity-content">
                 <h3 className="text-2xl font-bold mb-4">Task Allocation</h3>
                 <p className="mb-4">
@@ -99,7 +105,7 @@ const Activities = () => {
               <h3 className="text-2xl font-bold mb-4">Competition 2: Outdoor Environment</h3>
               <div className="activity-images">
                 <img src={img5} alt="Outdoor Competition Image 1" className="activity-image" />
-                <img src={outdoor2} alt="Outdoor Competition Image 2" className="activity-image" />
+                <img src={comp2} alt="Outdoor Competition Image 2" className="activity-image" />
                 <img src={competition2} alt="Outdoor Competition Image 3" className="activity-image" />
               </div>
               <div>
