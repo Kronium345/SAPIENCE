@@ -10,7 +10,7 @@ import img3 from '../../assets/activities/img3.png';
 import search from '../../assets/search_and_rescue.jpg';
 import drone from '../../assets/drone_swarm.png';
 import newBanner from '../../assets/blue_map_2.png'
-import finalBanner from '../../assets/final-sapience-banner-design-5.png';
+import finalBanner from '../../assets/final-sapience-banner-design-6.png';
 import natoBanner from '../../assets/sprg.png';
 import cityLogo from '../../assets/city-logo.jpeg';
 import uokLogo from '../../assets/uok-logo.jpeg';
