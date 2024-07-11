@@ -16,7 +16,7 @@ import cityLogo from '../../assets/city-logo.jpeg';
 import uokLogo from '../../assets/uok-logo.jpeg';
 import uahLogo from '../../assets/uah-logo.png';
 import dutLogo from '../../assets/dut-logo.png';
-import flyer from '../../assets/SST_event_flyer.pdf';
+import flyer from '../../assets/SST_event_flyer_AL1a_digital_accessible.pdf';
 import './Home.css';
 
 const Home = () => {
