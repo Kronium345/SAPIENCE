@@ -33,19 +33,18 @@
 
 .navbar .nav-links {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem; /* Increase gap to ensure consistent spacing */
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem; /* Increase gap to ensure consistent spacing */
   margin: 0;
   padding: 0;
 }
 
 .navbar ul li {
-  margin: 0 15px;
   position: relative;
 }
 
@@ -142,7 +141,10 @@
     width: 100%;
     text-align: center;
   }
-  
+
+  .navbar ul li:first-child {
+    padding-left: 25px; /* Adjust this value to align with other menu items */
+  }
 
   .navbar ul li ul {
     position: static;

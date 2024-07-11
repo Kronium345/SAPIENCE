@@ -10,7 +10,7 @@ import img3 from '../../assets/activities/img3.png';
 import search from '../../assets/search_and_rescue.jpg';
 import drone from '../../assets/drone_swarm.png';
 import newBanner from '../../assets/blue_map_2.png'
-import finalBanner from '../../assets/final-sapience-banner-design-3.png';
+import finalBanner from '../../assets/final-sapience-banner-design-5.png';
 import natoBanner from '../../assets/sprg.png';
 import cityLogo from '../../assets/city-logo.jpeg';
 import uokLogo from '../../assets/uok-logo.jpeg';
@@ -33,8 +33,8 @@ const Home = () => {
           </div>
         </section>
 
-          <section className="banner" style={{ backgroundImage: `url(${natoBanner})` }}>
-          </section>
+        <section className="banner" style={{ backgroundImage: `url(${natoBanner})` }}>
+        </section>
 
         {/* Intro Section */}
         <section className="intro py-16 text-center">
@@ -126,7 +126,7 @@ const Home = () => {
           <div className="container mx-auto px-4">
             <h2 className="document-text text-4xl font-bold mb-8 text-black">Read and Download the Leaflet for Competition 1</h2>
             <div className="flex flex-col md:flex-row justify-center items-center space-x-4 max-w-4xl mx-auto">
-              <div className="w-full md:w-1/2 mt-4 md:mt-0">
+              <div className="w-full">
                 <div className="w-full h-full object-cover rounded-lg shadow-lg bg-white flex items-center justify-center">
                   <iframe src={flyer} width="100%" height="800px" style={{ border: 'none' }}></iframe>
                 </div>
@@ -134,6 +134,7 @@ const Home = () => {
             </div>
           </div>
         </section>
+
 
 
 
