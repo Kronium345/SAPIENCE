@@ -12,7 +12,7 @@ const Competitions = () => {
         </section>
 
         {/* Competition 1 Section */}
-        <section className="competition-section py-16 bg-customBlue text-center">
+        <section className="competition-section py-16 bg-customdDarkBlue text-center">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold mb-8">Competition 1: Indoor Mapping and Object Detection</h2>
             <p className="text-xl mb-4">Location: City, University of London Autonomous Systems Arena</p>
@@ -47,7 +47,7 @@ const Competitions = () => {
         </section>
 
         {/* Competition 2 Section */}
-        <section className="competition-section py-16 bg-customBlue text-center">
+        <section className="competition-section py-16 bg-customDarkBlue text-center">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold mb-8">Competition 2: Outdoor Mapping and Rapid Tasks</h2>
             <p className="text-xl mb-4">Location: Huntsville, Alabama, USA</p>
@@ -75,7 +75,7 @@ const Competitions = () => {
         </section>
 
         {/* Competition 3 Section */}
-        <section className="competition-section py-16 bg-customBlue text-center">
+        <section className="competition-section py-16 bg-customDarkBlue text-center">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold mb-8">Competition 3: Combined Indoor and Outdoor Search and Rescue</h2>
             <p className="text-xl mb-4">Location: Delft, Netherlands</p>

@@ -21,6 +21,9 @@ module.exports = {
         customBlack: {
           DEFAULT: '#000'
         },
+        customDarkBlue: {
+          DEFAULT: '#143e61'
+        },
         'blue-200': '#cfe8ff',
         'gray-200': '#e5e7eb',
         'gray-300': '#d1d5db',
