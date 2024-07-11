@@ -4,9 +4,9 @@
 .home .hero {
   position: relative;
   width: 100%;
-  height: calc(100vh - 150px); /* Subtracting banner height to fit the screen */
+  height: calc(100vh - 90px); /* Subtracting banner height to fit the screen */
   background-size: cover;
-  background-position: center;
+  background-position: center 70%; /* Adjust the background position */
   display: flex;
   flex-direction: column; /* Ensure the content stacks vertically */
   align-items: center;
@@ -290,6 +290,7 @@
   height: 120px;
 }
 
+/* Responsive Adjustments */
 @media (max-width: 768px) {
   .hero-content h2 {
     font-size: 3rem;
@@ -328,5 +329,21 @@
 
   .custom-arrow.prev {
     left: -40px;
+  }
+
+  .home .hero-content {
+    margin-bottom: 0; /* Remove the bottom margin */
+  }
+
+  .home .intro-title, .home .intro-subtitle {
+    text-align: center; /* Center the text */
+  }
+
+  .document-section .flex-col {
+    flex-direction: column;
+  }
+
+  .document-section .max-w-4xl {
+    max-width: 100%; /* Ensure full width on mobile */
   }
 }

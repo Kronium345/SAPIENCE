@@ -10,11 +10,13 @@ import img3 from '../../assets/activities/img3.png';
 import search from '../../assets/search_and_rescue.jpg';
 import drone from '../../assets/drone_swarm.png';
 import newBanner from '../../assets/blue_map_2.png'
+import finalBanner from '../../assets/final-sapience-banner-design-3.png';
 import natoBanner from '../../assets/sprg.png';
 import cityLogo from '../../assets/city-logo.jpeg';
 import uokLogo from '../../assets/uok-logo.jpeg';
 import uahLogo from '../../assets/uah-logo.png';
 import dutLogo from '../../assets/dut-logo.png';
+import flyer from '../../assets/SST_event_flyer.pdf';
 import './Home.css';
 
 const Home = () => {
@@ -24,7 +26,7 @@ const Home = () => {
     <div className="home">
       <div className="container">
         {/* Hero Section */}
-        <section className="hero h-screen flex flex-col items-center justify-center text-center" style={{ backgroundImage: `url(${newBanner})` }}>
+        <section className="hero h-screen flex flex-col items-center justify-center text-center" style={{ backgroundImage: `url(${finalBanner})` }}>
           <div className="hero-content">
             <h2 className="intro-title">SAPIENCE</h2>
             <p className="intro-subtitle">Sense & Avoid - a cooPeratIvE droNe CompEtition</p>
@@ -122,19 +124,20 @@ const Home = () => {
         {/* Document Section */}
         <section className="document-section py-16 bg-gray-100 text-center">
           <div className="container mx-auto px-4">
-            <h2 className="document-text text-4xl font-bold mb-8 text-white">Read and Download the Leaflet</h2>
+            <h2 className="document-text text-4xl font-bold mb-8 text-black">Read and Download the Leaflet for Competition 1</h2>
             <div className="flex flex-col md:flex-row justify-center items-center space-x-4 max-w-4xl mx-auto">
-              <div className="w-full md:w-4/5">
-                <a href="/IBP_Problemstatement.docx" download className="block text-customBlack text-xl font-bold mb-4">Download the Leaflet</a>
-              </div>
               <div className="w-full md:w-1/2 mt-4 md:mt-0">
-                <div className="w-full h-64 object-cover rounded-lg shadow-lg bg-white flex items-center justify-center">
-                  <p>Placeholder</p>
+                <div className="w-full h-full object-cover rounded-lg shadow-lg bg-white flex items-center justify-center">
+                  <iframe src={flyer} width="100%" height="800px" style={{ border: 'none' }}></iframe>
                 </div>
               </div>
             </div>
           </div>
         </section>
+
+
+
+
       </div>
     </div>
   );
